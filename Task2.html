@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast App</title>
+    <link rel="stylesheet" href="Task 2.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Weather Forecast</h1>
+            <div class="search">
+                <input type="text" id="city" placeholder="Enter City">
+                <button id="search-btn">Search</button>
+            </div>
+        </header>
+
+        <nav class="tabs">
+            <button class="tab-btn active" id="today-tab">Today</button>
+            <button class="tab-btn" id="hourly-tab">Hourly</button>
+            <button class="tab-btn" id="daily-tab">Daily</button>
+        </nav>
+
+        <section id="weather-details">
+            <div id="today-weather" class="weather-section active"><br><br>
+                <h2>Today's Weather</h2><br><br>
+                <div class="weather-info">
+                    <p id="temperature"></p>
+                    <p id="climate"></p>
+                    <p id="aqi"></p>
+                    <p id="uvindex"></p>
+                    <p id="humidity"></p>
+                    <p id="wind"></p>
+                    <p id="dewpoint"></p>
+                    <p id="pressure"></p>
+                    <p id="visibility"></p>
+                    <p id="sunrise"></p>
+                    <p id="sunset"></p>
+                    <p id="moon-phase"></p>
+                    <p id="cloudiness"></p>
+                    <p id="storm"></p>
+                </div>
+            </div>
+
+            <div id="hourly-weather" class="weather-section"><br><br>
+                <h2>Hourly Forecast</h2><br><br>
+                <div class="hourly-container"></div>
+            </div>
+
+            <div id="daily-weather" class="weather-section"><br><br>
+                <h2>Daily Forecast</h2><br><br>
+                <div class="daily-container"></div>
+            </div>
+        </section>
+    </div>
+  
+    <script src="Task 2.js"></script>
+</body>
+</html>
